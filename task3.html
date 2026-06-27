@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">0</h1>
+
+    <button onclick="getCount()">+</button>
+    <button onclick="getDecrement()">-</button>
+    <script>
+        let count = 0;
+        let ele = document.getElementById("h")
+
+        function getCount(){
+            ele.innerHTML = ++count;
+        }
+        function getDecrement(){
+            ele.innerHTML = --count;
+        }
+    </script>
+</body>
+</html>
